@@ -1,0 +1,16 @@
+<div class="header"><p><strong>TEST</strong></p></div>
+<div class="body"><br><br>
+  <label for="uname">Client/ID:  </label>
+    <input type="text" maxlength="20" size="20" id="uname" name="name" [(ngModel)]="name"><br><br>
+
+    <label for="examiner">Examiner:  </label>
+    <input type="text"  maxlength="20" size="20"  id="examiner" name="examiner" [(ngModel)]="examiner"><br><br>
+    Enter Test Number: <input type="text"  maxlength="20" size="10"  id="testnum" name="testnum"[(ngModel)]="testnum"><br><br>
+        Date and Time: {{jstoday}}<br><br><br><br><br>
+Click "Next" to begin the <br> Performance Based Test
+</div>
+<div class="bottom">
+        <button [routerLink]="['/start']"  > Back</button>
+      <button [routerLink]="['/page1']" (click)="SetParams()" > Next</button>
+
+ </div>
