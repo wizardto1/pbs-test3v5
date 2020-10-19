@@ -72,6 +72,7 @@ else if (this.score1=="no"){
 this.note1=this.scoresService.getnote1();
 this.flag1=this.scoresService.getLeg1();
 this.time1=this.scoresService.gettime1();
+this.note1=this.scoresService.getnote1();
   }
   radioEventHandler(event:any){
     
